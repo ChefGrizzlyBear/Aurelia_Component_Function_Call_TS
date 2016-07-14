@@ -1,0 +1,9 @@
+<template>
+  <require from='components/user-location-selector/src/user-location-selector'></require>
+  <section class="au-animate">
+    <h2>${heading}</h2>
+    <user-location-selector view-model.ref="uls"></user-location-selector>
+    <br>
+    <input type="button" value="Call Component Function From Page Importing Component" click.delegate="callComponentFunction()"/>
+  </section>
+</template>
